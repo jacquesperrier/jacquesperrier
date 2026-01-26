@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspection Unité 108SD</title>
+</head>
+<body>
+    <h2>Rapport d'Inspection Détaillé</h2>
+    <form action="https://formsubmit.co/mjacquesperrier@gmail.com" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="Inspection Unité 108SD">
+        <input type="hidden" name="_captcha" value="false">
+
+        <p><label>👤 Auditeur: <input type="text" name="Auditeur" value="Perrier" required></label></p>
+        <p><label>🚛 Unité: <input type="text" name="Unite" value="108SD" required></label></p>
+        <p><label>🛣️ Kilométrage: <input type="number" name="Kilometrage" required></label></p>
+
+        <p><label>⛽ Carburant:
+            <select name="Niveau_Carburant">
+                <option value="100%">Plein</option>
+                <option value="50%">1/2</option>
+                <option value="Reserve">Réserve</option>
+            </select>
+        </label></p>
+
+        <p><label>🔧 Mécanique (Freins/Pneus):
+            <select name="Verif_Mecanique">
+                <option value="OK">OK</option>
+                <option value="URGENT">Réparation requise</option>
+            </select>
+        </label></p>
+
+        <p><label>📸 Photo du bris: <input type="file" name="Photo" accept="image/*"></label></p>
+        <p><label>📝 Notes: <textarea name="Notes"></textarea></label></p>
+
+        <button type="submit" style="background: #28a745; color: white; padding: 10px; border-radius: 5px;">✅ Envoyer l'inspection</button>
+    </form>
+</body>
+</html>
